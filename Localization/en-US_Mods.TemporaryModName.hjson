@@ -1,0 +1,11 @@
+Items: {
+	PortableCannon: {
+		DisplayName: Portable Cannon
+		Tooltip: ""
+	}
+
+	PortableBunnyCannon: {
+		DisplayName: Portable Bunny Cannon
+		Tooltip: ""
+	}
+}

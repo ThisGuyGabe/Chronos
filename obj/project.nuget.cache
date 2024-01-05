@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SMmm/tuxu8WLnVYQq8j08jT2CJCINnUhRnE5sUOmrtomVbuDgJLqZ7A9PVdOCbcfRLaNO+xj4OY2/LkW4b7EMw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gabri\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TemporaryModName\\TemporaryModName.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabri\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}

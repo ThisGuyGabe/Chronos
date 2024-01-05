@@ -1,0 +1,3 @@
+displayName = TemporaryModName
+author = ThatTemporaryGuy
+version = 0.1
