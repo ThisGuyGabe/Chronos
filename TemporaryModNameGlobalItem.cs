@@ -8,8 +8,6 @@ namespace TemporaryModName
 	{
 		public override void SetDefaults(Item item)
 		{
-			item.autoReuse = true;
-
 			if(item.type == ItemID.Cannonball)
 			{
 				item.ammo = ItemID.Cannonball;

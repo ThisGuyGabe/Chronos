@@ -8,4 +8,16 @@ Items: {
 		DisplayName: Portable Bunny Cannon
 		Tooltip: ""
 	}
+
+	EnergyBlaster: {
+		DisplayName: Energy Blaster
+		Tooltip: ""
+	}
+
+	HauntedCandle: {
+		Tooltip: ""
+		DisplayName: Haunted Candle
+	}
 }
+
+Projectiles.EnergyBlast.DisplayName: Energy Blast
