@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 namespace TemporaryModName.Content.Items.Accessories.Dungeon.HardmodeDungeon;
 
 public sealed class HauntedCandle : ModItem {
-    public sealed override string Texture => "TemporaryModName/Assets/Textures/Accessories/Dungeon/HardmodeDungeon/HauntedCandle";
+    public sealed override string Texture => "TemporaryModName/Assets/Textures/Items/Accessories/Dungeon/HardmodeDungeon/HauntedCandle";
     public override void SetStaticDefaults() {
 	
 		Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(6, 4));

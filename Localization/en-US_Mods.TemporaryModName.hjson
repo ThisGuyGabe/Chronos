@@ -18,6 +18,14 @@ Items: {
 		Tooltip: ""
 		DisplayName: Haunted Candle
 	}
+
+	Needle: {
+		DisplayName: Needle
+		Tooltip: ""
+	}
 }
 
-Projectiles.EnergyBlast.DisplayName: Energy Blast
+Projectiles: {
+	EnergyBlast.DisplayName: Energy Blast
+	NeedleProj.DisplayName: Needle Proj
+}
