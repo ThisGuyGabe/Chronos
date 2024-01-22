@@ -3,6 +3,26 @@ Items: {
 		DisplayName: Needle
 		Tooltip: ""
 	}
+
+	AquaticBoots: {
+		DisplayName: Aquatic Boots
+		Tooltip: ""
+	}
+
+	AquaticDiverHelmet: {
+		DisplayName: Aquatic Diver Helmet
+		Tooltip: ""
+	}
+
+	AquaticPlating: {
+		DisplayName: Aquatic Plating
+		Tooltip: ""
+	}
+
+	AquaticHood: {
+		DisplayName: Aquatic Hood
+		Tooltip: ""
+	}
 }
 
 Projectiles.NeedleProj.DisplayName: Needle Proj
