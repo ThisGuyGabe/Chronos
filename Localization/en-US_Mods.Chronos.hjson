@@ -1,0 +1,8 @@
+Items: {
+	Needle: {
+		DisplayName: Needle
+		Tooltip: ""
+	}
+}
+
+Projectiles.NeedleProj.DisplayName: Needle Proj

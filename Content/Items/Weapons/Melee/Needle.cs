@@ -9,12 +9,12 @@ using Terraria.DataStructures;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
-using TemporaryModName.Core;
+using Chronos.Core;
 
-namespace TemporaryModName.Content.Items.Weapons.Melee;
+namespace Chronos.Content.Items.Weapons.Melee;
 
 public sealed class Needle : ModItem {
-    public sealed override string Texture => "TemporaryModName/Assets/Textures/Items/Weapons/Melee/Needle";
+    public sealed override string Texture => "Chronos/Assets/Textures/Items/Weapons/Melee/Needle";
     public override void SetDefaults() {
 		Item.damage = 25;
 		Item.DamageType = DamageClass.Melee;
@@ -47,7 +47,7 @@ public sealed class Needle : ModItem {
 }
 
 public sealed class NeedleProj : ModProjectile {
-    public sealed override string Texture => "TemporaryModName/Assets/Textures/Projectiles/Melee/NeedleProj";
+    public sealed override string Texture => "Chronos/Assets/Textures/Projectiles/Melee/NeedleProj";
     private Player Owner => Main.player[Projectile.owner];
 	private bool Retracting => Projectile.timeLeft < 40;
 

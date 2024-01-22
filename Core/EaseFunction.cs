@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 
-namespace TemporaryModName.Core {
+namespace Chronos.Core {
 	public abstract class EaseFunction {
 		public static readonly EaseFunction Linear = new PolynomialEase((float x) => { return x; });
 

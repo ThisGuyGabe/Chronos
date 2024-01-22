@@ -4,10 +4,10 @@ using ReLogic.Content;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace TemporaryModName.Content.Dusts;
+namespace Chronos.Content.Dusts;
 
 public sealed class GlowLine : ModDust {
-    public sealed override string Texture => "TemporaryModName/Assets/Textures/Dusts/GlowLine";
+    public sealed override string Texture => "Chronos/Assets/Textures/Dusts/GlowLine";
     public override Color? GetAlpha(Dust dust, Color lightColor) {
 		if (dust.fadeIn <= 2)
 			return Color.Transparent;
@@ -21,7 +21,7 @@ public sealed class GlowLine : ModDust {
 		dust.frame = new Rectangle(0, 0, 8, 128);
 		dust.customData = dust.scale;
 
-		dust.shader = new Terraria.Graphics.Shaders.ArmorShaderData(new Ref<Effect>(ModContent.Request<Effect>("TemporaryModName/Effects/GlowingDust", AssetRequestMode.ImmediateLoad).Value), "GlowingDustPass");
+		dust.shader = new Terraria.Graphics.Shaders.ArmorShaderData(new Ref<Effect>(ModContent.Request<Effect>("Chronos/Effects/GlowingDust", AssetRequestMode.ImmediateLoad).Value), "GlowingDustPass");
 	}
 
 	public override bool Update(Dust dust) {

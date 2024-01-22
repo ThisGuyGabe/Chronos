@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TemporaryModName 
+namespace Chronos 
 {
 	public class GenericGlobalItem : GlobalItem
 	{

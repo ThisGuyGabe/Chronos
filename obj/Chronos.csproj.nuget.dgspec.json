@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Chronos\\TemporaryModName.csproj": {}
+    "C:\\Users\\gabri\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Chronos\\Chronos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Chronos\\TemporaryModName.csproj": {
+    "C:\\Users\\gabri\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Chronos\\Chronos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Chronos\\TemporaryModName.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Chronos\\Chronos.csproj",
         "projectName": "Chronos",
-        "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Chronos\\TemporaryModName.csproj",
+        "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Chronos\\Chronos.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\gabri\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Chronos\\obj\\",
         "projectStyle": "PackageReference",

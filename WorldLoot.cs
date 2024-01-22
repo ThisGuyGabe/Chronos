@@ -1,9 +1,9 @@
-﻿using TemporaryModName.Content.Items.Weapons.Melee;
+﻿using Chronos.Content.Items.Weapons.Melee;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TemporaryModName
+namespace Chronos
 {
     public class WorldLoot : ModSystem
     {
