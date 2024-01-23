@@ -1,7 +1,11 @@
 Items: {
 	Needle: {
 		DisplayName: Needle
-		Tooltip: ""
+		Tooltip:
+			'''
+			Throws out a needle that goes in a line and retreats. 
+			If it's used in the air, it lets the player hover.
+			'''
 	}
 
 	AquaticBoots: {
@@ -25,4 +29,4 @@ Items: {
 	}
 }
 
-Projectiles.NeedleProj.DisplayName: Needle Proj
+Projectiles.NeedleProj.DisplayName: Needle Projectile
