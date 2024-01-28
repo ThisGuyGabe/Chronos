@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 using System.Collections.Generic;
 using Terraria.ID;
 
-namespace Chronos 
+namespace Chronos.Common.Global
 {
     public class ChronosGlobalItem : GlobalItem
     {

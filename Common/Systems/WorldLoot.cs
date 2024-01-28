@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Chronos
+namespace Chronos.Common.Systems
 {
     public class WorldLoot : ModSystem
     {
