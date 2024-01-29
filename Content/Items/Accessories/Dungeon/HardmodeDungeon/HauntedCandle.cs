@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 namespace Chronos.Content.Items.Accessories.Dungeon.HardmodeDungeon;
 
 public sealed class HauntedCandle : ModItem {
-    public sealed override string Texture => "Chronos/Assets/Textures/Items/Accessories/Dungeon/HardmodeDungeon/HauntedCandle";
+    //public sealed override string Texture => "Chronos/Assets/Textures/Items/Accessories/Dungeon/HardmodeDungeon/HauntedCandle";
     public override void SetStaticDefaults() {
 	
 		Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(6, 4));
@@ -24,30 +24,25 @@ public sealed class HauntedCandle : ModItem {
 		Item.value = Item.sellPrice(gold: 6, silver: 50); // Similar to something like the Paladin's Shield.
 	}
 
-    public override void UpdateAccessory(Player player, bool hideVisual) { 
-        if (player.statLife <= player.statLifeMax2 / 2) // When u are half health.
+    public override void UpdateAccessory(Player player, bool hideVisual) {
+        int lifenum = player.statLifeMax2 - player.statLife;
+        float damagemult;
+        float defensemult;
+
+        if (lifenum > 0 ) 
         {
-            player.GetDamage(DamageClass.Generic) += 0.18f; // 18% damage boost, 12% crit boost, and 6% attack speed boost.
-            player.GetCritChance(DamageClass.Generic) += 0.12f;
-            player.GetAttackSpeed(DamageClass.Generic) += 0.06f;
-
-            player.statDefense -= 8; // -8 defense and -2% damage reduction
-            player.endurance -= 0.02f;
-
-            player.statManaMax2 += 40;
+            damagemult = 0.01f * lifenum;
+            defensemult = 10f / lifenum;
         }
         else
         {
-            player.GetDamage(DamageClass.Generic) -= 0.10f; // -10% damage, -8% crit chance, and -6% attack speed.
-            player.GetCritChance(DamageClass.Generic) -= 0.08f;
-            player.GetAttackSpeed(DamageClass.Generic) -= -0.06f;
-
-            player.statDefense += 25; // +25 defense and 6% damage reduction.
-            player.endurance += 0.06f;
-
-            player.statManaMax2 += 80;
+            damagemult = 1;
+            defensemult = 1;
         }
-        // Basically higher the health lower your offensive stats are but your defensive stats are boosted such as defense and endurance. The lower your health offensive stats are higher and defense and endurance is lower.
+
+        //Main.NewText($"Lifestat {damagemult}");
+        player.statDefense *= defensemult; // 18% damage boost, 12% crit boost, and 6% attack speed boost.
+        player.GetDamage(DamageClass.Generic) *= damagemult; // 18% damage boost, 12% crit boost, and 6% attack speed boost.
     }
     public override void AddRecipes() {
     
