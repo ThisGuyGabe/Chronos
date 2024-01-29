@@ -42,6 +42,11 @@ Items: {
 		DisplayName: The Hallowed Soldiers Shield
 		Tooltip: ""
 	}
+
+	HauntedCandle: {
+		DisplayName: Haunted Candle
+		Tooltip: ""
+	}
 }
 
 Projectiles.NeedleProj.DisplayName: Needle Projectile
