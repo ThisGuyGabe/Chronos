@@ -1,5 +1,3 @@
-using Microsoft.Xna.Framework;
-using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -17,7 +15,7 @@ namespace Chronos.Content.Items.Accessories {
             Item.defense = 10;
         }
 
-        public void ResetEffects(Player player)
+        public static void ResetEffects(Player player)
         {
             //player.GetModPlayer<ChronosPlayer>().ichorThrower = false;
             ChronosPlayer p = player.GetModPlayer<ChronosPlayer>();
