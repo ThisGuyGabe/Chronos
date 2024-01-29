@@ -4,4 +4,3 @@ version = 1.0
 homepage = https://discord.gg/B5g4G3ugXc
 hideResources = true
 hideCode = true
-dllReferences = StructureHelper
