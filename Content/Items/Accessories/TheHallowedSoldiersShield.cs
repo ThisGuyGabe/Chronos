@@ -24,8 +24,7 @@ namespace Chronos.Content.Items.Accessories {
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.statLifeMax2 *= 3;
-            player.statLifeMax2 /= 2;
+            player.statLifeMax2 = player.statLifeMax2 * 3 / 2; // It's simplified now.
             player.AddBuff(BuffID.ShadowDodge, 3);
             player.accRunSpeed = 11f; // The player's maximum run speed with accessories
             player.moveSpeed += 0.07f; // The acceleration multiplier of the player's movement speed

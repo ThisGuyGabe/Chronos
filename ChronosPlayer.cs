@@ -1,15 +1,7 @@
-using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.ModLoader.IO;
-using Terraria.GameContent.Creative;
-using Terraria.ID;
-using Terraria.GameInput;
-using Chronos;
 
 namespace Chronos
 {
@@ -28,7 +20,7 @@ namespace Chronos
 
         public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
         {
-            if (Main.rand.Next(3) == 1)
+            if (Main.rand.NextBool(3))
             {
                 if (target.life > 0)
                 {
@@ -50,10 +42,10 @@ namespace Chronos
             }
         }
 
-        private bool IsWorldEvilMonster(int npcType)
+        private static bool IsWorldEvilMonster(int npcType)
         {
             // Replace these IDs with the appropriate IDs for your world evil monsters
-            int[] worldEvilMonsterIDs = { NPCID.EaterofWorldsHead, NPCID.BrainofCthulhu, NPCID.BloodCrawler, NPCID.FaceMonster, NPCID.BigCrimera, NPCID.LittleCrimera, NPCID.Crimera , NPCID.Herpling, NPCID.FloatyGross, NPCID.Crimslime, NPCID.CrimsonAxe, NPCID.IchorSticker, NPCID.BigEater, NPCID.LittleEater, NPCID.EaterofSouls, NPCID.Corruptor, NPCID.CorruptSlime, NPCID.DarkMummy };
+            int[] worldEvilMonsterIDs = { NPCID.EaterofWorldsHead, NPCID.BrainofCthulhu, NPCID.BloodCrawler, NPCID.FaceMonster, NPCID.BigCrimera, NPCID.LittleCrimera, NPCID.Crimera, NPCID.Herpling, NPCID.FloatyGross, NPCID.Crimslime, NPCID.CrimsonAxe, NPCID.IchorSticker, NPCID.BigEater, NPCID.LittleEater, NPCID.EaterofSouls, NPCID.Corruptor, NPCID.CorruptSlime, NPCID.DarkMummy };
 
             return worldEvilMonsterIDs.Contains(npcType);
         }
