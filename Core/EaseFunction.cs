@@ -41,11 +41,6 @@ namespace Chronos.Core {
 		public override float Ease(float time) {
 			return _function(time);
 		}
-
-		//removed because not needed for spirit
-		//public static EaseFunction Generate(int factor, int type)
-		//{
-		//}
 	}
 
 	public class EaseBuilder : EaseFunction {

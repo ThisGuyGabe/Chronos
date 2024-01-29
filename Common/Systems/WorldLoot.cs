@@ -14,10 +14,10 @@ namespace Chronos.Common.Systems
                 Chest chest = Main.chest[chestIndex];
                 int NeedleNum = 1;
 
-                // Spider chest btw
+                // This is spider chest btw.
                 if (chest != null && Main.tile[chest.x, chest.y].TileType == TileID.Containers && Main.tile[chest.x, chest.y].TileFrameX == 15 * 36)
                 {
-                    if (Main.rand.NextBool(2)) // the chance!!!
+                    if (Main.rand.NextBool(2))
                     {
                         for (int inventoryIndex = 0; inventoryIndex < 40; inventoryIndex++)
                         {

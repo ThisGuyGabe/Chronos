@@ -24,13 +24,13 @@ namespace Chronos
             {
                 if (target.life > 0)
                 {
-                    if (ichorThrower) // Use 'if (ichorThrower)' instead of 'if (ichorThrower = true)'
+                    if (ichorThrower)
                     {
-                        target.AddBuff(BuffID.Ichor, 1200); // 120 frames = 2 seconds
+                        target.AddBuff(BuffID.Ichor, 1200);
                     }
                     else if (flameThrower)
                     {
-                        target.AddBuff(BuffID.CursedInferno, 1200); // 120 frames = 2 seconds
+                        target.AddBuff(BuffID.CursedInferno, 1200);
                     }
                 }
             }
@@ -44,7 +44,6 @@ namespace Chronos
 
         private static bool IsWorldEvilMonster(int npcType)
         {
-            // Replace these IDs with the appropriate IDs for your world evil monsters
             int[] worldEvilMonsterIDs = { NPCID.EaterofWorldsHead, NPCID.BrainofCthulhu, NPCID.BloodCrawler, NPCID.FaceMonster, NPCID.BigCrimera, NPCID.LittleCrimera, NPCID.Crimera, NPCID.Herpling, NPCID.FloatyGross, NPCID.Crimslime, NPCID.CrimsonAxe, NPCID.IchorSticker, NPCID.BigEater, NPCID.LittleEater, NPCID.EaterofSouls, NPCID.Corruptor, NPCID.CorruptSlime, NPCID.DarkMummy };
 
             return worldEvilMonsterIDs.Contains(npcType);

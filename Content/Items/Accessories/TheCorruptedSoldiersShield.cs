@@ -17,17 +17,16 @@ namespace Chronos.Content.Items.Accessories {
 
         public static void ResetEffects(Player player)
         {
-            //player.GetModPlayer<ChronosPlayer>().ichorThrower = false;
             ChronosPlayer p = player.GetModPlayer<ChronosPlayer>();
             p.flameThrower = false;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.statLifeMax2 = player.statLifeMax2 * 2 / 3; // It's simplified now.
+            player.statLifeMax2 = player.statLifeMax2 * 2 / 3;
             player.buffImmune[BuffID.CursedInferno] = true;
-            player.accRunSpeed = 11f; // The player's maximum run speed with accessories
-            player.moveSpeed += 0.07f; // The acceleration multiplier of the player's movement speed
+            player.accRunSpeed = 11f;
+            player.moveSpeed += 0.07f; 
             player.GetModPlayer<ChronosPlayer>().flameThrower = true;
         }
     }
