@@ -3,12 +3,14 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace Chronos.Content.Items.Accessories {
+    [AutoloadEquip(EquipType.Shield)]
     public sealed class TheCursedSoldiersShield : ModItem
     {
+        public sealed override string Texture => "Chronos/Assets/Textures/Items/Accessories/TheCursedSoldiersShield";
         public override void SetDefaults()
         {
-            Item.width = 18;
-            Item.height = 18;
+            Item.width = 32;
+            Item.height = 32;
             Item.value = 10000;
             Item.rare = ItemRarityID.Purple;
             Item.accessory = true;

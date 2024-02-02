@@ -32,7 +32,6 @@ namespace Chronos.Content.Dusts
         {
             if ((float)dust.customData != 0f)
             {
-                //dust.position -= new Vector2(4, 64) * dust.scale;
                 dust.scale = (float)dust.customData;
                 dust.customData = 0f;
             }
