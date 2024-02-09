@@ -1,7 +1,12 @@
 displayName = Chronos Mod
 author = Chronos Mod Team
 version = 1.0
-homepage = https://discord.gg/B5g4G3ugXc
+
 hideResources = true
 hideCode = true
+includePDB = false
+includeSource = false
 dllReferences = StructureHelper
+buildIgnore = *.user, obj\*, bin\*, .vs\*, Sprite Gallery\*, .git\*, .gitignore, *.md, References\*
+
+homepage = https://discord.gg/B5g4G3ugXc

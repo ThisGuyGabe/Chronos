@@ -1,6 +1,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Chronos.Common.Players;
 
 namespace Chronos.Content.Items.Accessories {
     public sealed class TheCorruptedSoldiersShield : ModItem
