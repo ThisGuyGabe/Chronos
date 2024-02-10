@@ -35,7 +35,7 @@ public sealed class BloodstainedBulwark : ModItem {
                     player.AddBuff(ModContent.BuffType<Rampage>(), 300);
                     timer = 0;
                     readyToShowText = true;
-                    CombatText.NewText(player.getRect(), Color.Blue, "Ready", true);
+                    CombatText.NewText(player.getRect(), Color.IndianRed, "READY!", true);
                 }
             }
         }

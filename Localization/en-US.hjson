@@ -6,7 +6,7 @@ Mods: {
 				Stuff2: WIP2
 				Stuff3: WIP3
 				FlawlessTooltip: WIP4
-				BrainOfCthulhuShieldText: If you don't get hit for 10 seconds press '{0}' key to get a buff called Rampage
+				BrainOfCthulhuShieldText: If you don't get hit for 10 seconds, press '{0}' key to get a buff called Rampage
 			}
 		}
 
@@ -48,8 +48,8 @@ Mods: {
 			BloodstainedBulwark: {
 				Tooltip:
 					'''
-					If you don't get hit for 10 seconds press [NONE] to get a buff called Rampage 
-					that gives 50% critical strike chance for 5 seconds.
+					If you don't get hit for 10 seconds, press [NONE] to get a buff called Rampage 
+					that gives a 50% critical strike chance for 5 seconds.
 					The shield can also parry a projectile.
 					'''
 				DisplayName: Bloodstained Bulwark
@@ -66,13 +66,18 @@ Mods: {
 			}
 		}
 
-		Keybinds.SuperCritChance.DisplayName: Rampage Buff Activation
+		Keybinds.SuperCritChance.DisplayName: Rampage Activation
 		Projectiles.NeedleProj.DisplayName: Needle Projectile
 
 		Buffs: {
 			Rampage: {
 				Description: 50% increased critical chance.
 				DisplayName: Rampage
+			}
+
+			Cooldown: {
+				Description: You are unable to do certain actions right now.
+				DisplayName: Cooldown
 			}
 		}
 	}

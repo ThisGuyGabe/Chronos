@@ -43,7 +43,6 @@ public sealed class Needle : ModItem {
 		return true;
 	}
 }
-
 public sealed class NeedleProj : ModProjectile {
     public sealed override string Texture => "Chronos/Assets/Textures/Projectiles/Melee/NeedleProj";
     private Player Owner => Main.player[Projectile.owner];
@@ -71,7 +70,6 @@ public sealed class NeedleProj : ModProjectile {
 			alreadyHit.Clear();
 			startPos = Projectile.Center;
 		}
-
 		if (Retracting) {
 			Projectile.extraUpdates = 1;
 			Projectile.Center = Vector2.Lerp(Owner.Center, startPos, EaseFunction.EaseCircularOut.Ease(Projectile.timeLeft / 40f));
