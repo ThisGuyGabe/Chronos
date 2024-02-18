@@ -5,7 +5,8 @@ using Terraria.ModLoader;
 
 namespace Chronos.Common.Systems;
 
-public sealed class WorldLoot : ModSystem {
+public class WorldLoot : ModSystem 
+{
     public override void PostWorldGen() {
         for (int chestIndex = 0; chestIndex < Main.chest.Length; chestIndex++) {
             Chest chest = Main.chest[chestIndex];

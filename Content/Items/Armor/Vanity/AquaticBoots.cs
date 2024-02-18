@@ -1,19 +1,23 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
+using Chronos.Core;
 
 namespace Chronos.Content.Items.Armor.Vanity.AquaticDiverSet;
 
-[AutoloadEquip(EquipType.Head)]
-public sealed class AquaticDiverHelmet : ModItem {
-    public sealed override string Texture => "Chronos/Assets/Textures/Items/Armor/Vanity/AquaticDiverSet/AquaticDiverHelmet";
+[AutoloadEquip(EquipType.Legs)]
+public class AquaticBoots : BaseItem 
+{
+    public override string Texture => "Chronos/Assets/Textures/Items/Armor/Vanity/AquaticBoots";
+
     public override void SetDefaults() {
-        Item.width = 32;
-        Item.height = 34;
-        Item.value = Item.sellPrice(silver: 75);
+        Item.width = 22;
+        Item.height = 18;
+        Item.value = Item.sellPrice(silver: 45);
         Item.rare = ItemRarityID.Green;
         Item.vanity = true;
     }
+
     public override void AddRecipes() {
         CreateRecipe()
             .AddIngredient(ItemID.Silk, 20)

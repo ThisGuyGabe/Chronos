@@ -1,12 +1,15 @@
 ﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Chronos.Core;
 
 namespace Chronos.Content.Items.Armor.Vanity.AquaticDiverSet;
 
 [AutoloadEquip(EquipType.Body)]
-public sealed class AquaticPlating : ModItem {
-    public sealed override string Texture => "Chronos/Assets/Textures/Items/Armor/Vanity/AquaticDiverSet/AquaticPlating";
+public class AquaticPlating : BaseItem 
+{
+    public override string Texture => "Chronos/Assets/Textures/Items/Armor/Vanity/AquaticPlating";
+
     public override void SetDefaults() {
         Item.width = 30;
         Item.height = 20;
@@ -14,6 +17,7 @@ public sealed class AquaticPlating : ModItem {
         Item.rare = ItemRarityID.Green;
         Item.vanity = true;
     }
+
     public override void AddRecipes() {
         CreateRecipe()
             .AddIngredient(ItemID.Silk, 20)

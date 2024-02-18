@@ -1,0 +1,9 @@
+Cooldown: {
+	// DisplayName: Cooldown
+	// Description: You cannot do certain actions for a period of time
+}
+
+Rampage: {
+	// DisplayName: Rampage
+	// Description: 33% increased critical chance
+}

@@ -13,8 +13,10 @@ using Chronos.Core;
 
 namespace Chronos.Content.Items.Weapons.Melee;
 
-public sealed class Needle : ModItem {
-    public sealed override string Texture => "Chronos/Assets/Textures/Items/Weapons/Melee/Needle";
+public class Needle : BaseItem 
+{
+    public override string Texture => "Chronos/Assets/Textures/Items/Weapons/Melee/Needle";
+
     public override void SetDefaults() {
 		Item.damage = 25;
 		Item.DamageType = DamageClass.Melee;
@@ -35,20 +37,26 @@ public sealed class Needle : ModItem {
 		Item.value = Item.sellPrice(silver: 45);
 		Item.rare = ItemRarityID.Blue;
 	}
+
 	public override bool CanUseItem(Player player) {
 		return !Main.projectile.SkipLast(1).Any(n => n.active && n.owner == player.whoAmI && n.type == ModContent.ProjectileType<NeedleProj>());
 	}
+
 	public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback) {
 		SoundEngine.PlaySound(SoundID.Item156, player.Center);
 		return true;
 	}
 }
-public sealed class NeedleProj : ModProjectile {
-    public sealed override string Texture => "Chronos/Assets/Textures/Projectiles/Melee/NeedleProj";
+public class NeedleProj : ModProjectile 
+{
+    public override string Texture => "Chronos/Assets/Textures/Projectiles/Melee/NeedleProj";
+
     private Player Owner => Main.player[Projectile.owner];
+
 	private bool Retracting => Projectile.timeLeft < 40;
 
 	private Vector2 startPos;
+
 	private readonly List<NPC> alreadyHit = new();
 
 	public override void SetDefaults() {
@@ -59,6 +67,7 @@ public sealed class NeedleProj : ModProjectile {
 		Projectile.timeLeft = 80;
 		Projectile.penetrate = -1;
 	}
+
 	public override void AI() {
 		Owner.heldProj = Projectile.whoAmI;
 		Owner.SetCompositeArmFront(true, Player.CompositeArmStretchAmount.Full, Owner.DirectionTo(Projectile.Center).ToRotation() - 1.57f);
@@ -83,11 +92,13 @@ public sealed class NeedleProj : ModProjectile {
 			Projectile.velocity *= 0.935f;
 		}
 	}
+
 	public override bool OnTileCollide(Vector2 oldVelocity) {
 		if (Projectile.timeLeft > 40)
 			Projectile.timeLeft = 41;
 		return false;
 	}
+
 	public override bool PreDraw(ref Color lightColor) {
 		Texture2D texture = TextureAssets.Projectile[Type].Value;
 		Texture2D chainTexture = ModContent.Request<Texture2D>(Texture + "_Chain").Value;
@@ -106,11 +117,13 @@ public sealed class NeedleProj : ModProjectile {
 		Main.spriteBatch.Draw(texture, Projectile.Center - Main.screenPosition, null, lightColor, Projectile.rotation, new Vector2(texture.Width, 0), Projectile.scale, SpriteEffects.None, 0f);
 		return false;
 	}
+
 	public override bool? CanHitNPC(NPC target) {
 		if (alreadyHit.Contains(target))
 			return false;
 		return null;
 	}
+
 	public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone) {
 		alreadyHit.Add(target);
 	}

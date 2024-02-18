@@ -5,7 +5,8 @@ using Terraria.ID;
 
 namespace Chronos.Common.Global;
 
-public sealed class ChronosGlobalItem : GlobalItem {
+public class ChronosGlobalItem : GlobalItem 
+{
     public override void ModifyTooltips(Item item, List<TooltipLine> tooltips) {
         switch (item.type) {
             case ItemID.DaybloomSeeds:

@@ -6,14 +6,17 @@ using Terraria.ModLoader;
 
 namespace Chronos.Content.Dusts;
 
-public sealed class GlowLine : ModDust {
-    public sealed override string Texture => "Chronos/Assets/Textures/Dusts/GlowLine";
+public class GlowLine : ModDust 
+{
+    public override string Texture => "Chronos/Assets/Textures/Dusts/GlowLine";
+
     public override Color? GetAlpha(Dust dust, Color lightColor) {
         if (dust.fadeIn <= 2)
             return Color.Transparent;
 
         return dust.color * MathHelper.Min(1, dust.fadeIn / 20f);
     }
+
     public override void OnSpawn(Dust dust) {
         dust.fadeIn = 0;
         dust.noLight = false;
@@ -22,6 +25,7 @@ public sealed class GlowLine : ModDust {
 
         dust.shader = new Terraria.Graphics.Shaders.ArmorShaderData(new Ref<Effect>(ModContent.Request<Effect>("Chronos/Effects/GlowingDust", AssetRequestMode.ImmediateLoad).Value), "GlowingDustPass");
     }
+
     public override bool Update(Dust dust) {
         if ((float)dust.customData != 0f) {
             dust.scale = (float)dust.customData;

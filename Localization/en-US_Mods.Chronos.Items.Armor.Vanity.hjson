@@ -1,0 +1,21 @@
+AquaticDiverSet: {
+	AquaticBoots: {
+		DisplayName: Aquatic Boots
+		Tooltip: ""
+	}
+
+	AquaticDiverHelmet: {
+		DisplayName: Aquatic Diver Helmet
+		Tooltip: ""
+	}
+
+	AquaticHood: {
+		DisplayName: Aquatic Hood
+		Tooltip: ""
+	}
+
+	AquaticPlating: {
+		DisplayName: Aquatic Plating
+		Tooltip: ""
+	}
+}

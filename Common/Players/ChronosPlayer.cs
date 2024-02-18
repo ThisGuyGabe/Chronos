@@ -5,7 +5,8 @@ using Terraria.ModLoader;
 
 namespace Chronos.Common.Players;
 
-public sealed class ChronosPlayer : ModPlayer {
+public class ChronosPlayer : ModPlayer 
+{
     public bool ichorThrower = false;
     public bool flameThrower = false;
     public bool chromeThrower = false;
@@ -15,6 +16,7 @@ public sealed class ChronosPlayer : ModPlayer {
         flameThrower = false;
         chromeThrower = false;
     }
+
     public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers) {
         if (Main.rand.NextBool(3)) {
             if (target.life > 0) {
@@ -32,6 +34,7 @@ public sealed class ChronosPlayer : ModPlayer {
             Player.HealEffect(lifeSteal);
         }
     }
+
     private static bool IsWorldEvilMonster(int npcType) {
         int[] worldEvilMonsterIDs = { NPCID.EaterofWorldsHead, NPCID.BrainofCthulhu, NPCID.BloodCrawler, NPCID.FaceMonster, NPCID.BigCrimera, NPCID.LittleCrimera, NPCID.Crimera, NPCID.Herpling, NPCID.FloatyGross, NPCID.Crimslime, NPCID.CrimsonAxe, NPCID.IchorSticker, NPCID.BigEater, NPCID.LittleEater, NPCID.EaterofSouls, NPCID.Corruptor, NPCID.CorruptSlime, NPCID.DarkMummy };
 
