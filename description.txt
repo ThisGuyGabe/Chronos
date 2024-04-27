@@ -8,10 +8,9 @@ Credit to our Chronos Mod team
 Karve - Musician, and Owner
 ThatGuyGabe - Coder and Owner
 Stranza - Coder
-PashaVerti - Contributor
+PashaVerti - Contributor - (Polish - Localization)
 CloverUnlucky - Spriter
 LuckyCat - Spriter
-Jennifer - Coder
 Lamb Sauce - Spriter
 
 Our Previous Developers
@@ -19,9 +18,7 @@ Our Previous Developers
 Graydee (Coder and Spriter) - Made the Needle sprite and code for it in the last mod. 
 We decided to bring back this weapon for the mod.
 
-BasicallyIAmALittleCat (Coder) - They didn't code anything for this mod, 
-but they coded stuff for our last mod, which we decided to re-use, such as
-the biggest thing we use is the localization created by them, along with some other small things.
+Jennifer (Coder) - They did some stuff, but we removed it.
 
 Mati (Spriter) - Made the Chronos Mod icon.
 
