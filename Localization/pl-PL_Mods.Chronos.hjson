@@ -1,0 +1,68 @@
+Buffs: {
+	Cooldown: {
+		DisplayName: Needs Polish Translation
+		Description: Needs Polish Translation
+	}
+
+	Rampage: {
+		DisplayName: Needs Polish Translation
+		Description: Needs Polish Translation
+	}
+
+	Cavities: {
+		// DisplayName: Cavities
+		// Description: Mods.Chronos.Buffs.Cavities.Description
+	}
+}
+
+Items: {
+	AquaticBoots: {
+		DisplayName: Needs Polish Translation
+		Tooltip: ""
+	}
+
+	AquaticDiverHelmet: {
+		DisplayName: Needs Polish Translation
+		Tooltip: ""
+	}
+
+	AquaticHood: {
+		DisplayName: Needs Polish Translation
+		Tooltip: ""
+	}
+
+	AquaticPlating: {
+		DisplayName: Needs Polish Translation
+		Tooltip: ""
+	}
+
+	Needle: {
+		DisplayName: Igła
+		Tooltip:
+			'''
+			Wyrzuca igłę, która idzie w prostej linii i powraca
+			Jeżeli jest użyta w powietrzu, pozwala unosić się graczowi
+			'''
+	}
+
+	FryingPan: {
+		// DisplayName: Frying Pan
+		// Tooltip: ""
+	}
+
+	Egg: {
+		// DisplayName: Egg
+		// Tooltip: ""
+	}
+
+	Sugar: {
+		// DisplayName: Sugar
+		// Tooltip: ""
+	}
+}
+
+Projectiles: {
+	NeedleProj.DisplayName: Igła
+	// FriedEgg.DisplayName: Fried Egg
+	// FryingPanProjectile.DisplayName: Frying Pan Projectile
+}

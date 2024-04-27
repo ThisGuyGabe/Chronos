@@ -1,8 +1,0 @@
-﻿Needle: {
-	DisplayName: Igła
-	Tooltip:
-		'''
-		Wyrzuca igłę, która idzie w prostej linii i powraca.
-		Jeżeli jest użyta w powietrzu, pozwala unosić się graczowi.
-		'''
-}

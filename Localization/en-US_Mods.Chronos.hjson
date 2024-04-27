@@ -1,0 +1,68 @@
+Buffs: {
+	Cooldown: {
+		DisplayName: Cooldown
+		Description: You cannot do certain actions for a period of time
+	}
+
+	Rampage: {
+		DisplayName: Rampage
+		Description: 33% increased critical chance
+	}
+
+	Cavities: {
+		DisplayName: Cavities
+		Description: Mods.Chronos.Buffs.Cavities.Description
+	}
+}
+
+Items: {
+	AquaticBoots: {
+		DisplayName: Aquatic Boots
+		Tooltip: ""
+	}
+
+	AquaticDiverHelmet: {
+		DisplayName: Aquatic Diver Helmet
+		Tooltip: ""
+	}
+
+	AquaticHood: {
+		DisplayName: Aquatic Hood
+		Tooltip: ""
+	}
+
+	AquaticPlating: {
+		DisplayName: Aquatic Plating
+		Tooltip: ""
+	}
+
+	Needle: {
+		DisplayName: Needle
+		Tooltip:
+			'''
+			Throws out a needle that goes in a line and retreats
+			If it's used in the air it lets the player hover
+			'''
+	}
+
+	FryingPan: {
+		DisplayName: Frying Pan
+		Tooltip: ""
+	}
+
+	Egg: {
+		DisplayName: Egg
+		Tooltip: ""
+	}
+
+	Sugar: {
+		DisplayName: Sugar
+		Tooltip: ""
+	}
+}
+
+Projectiles: {
+	NeedleProj.DisplayName: Needle Projectile
+	FriedEgg.DisplayName: Fried Egg
+	FryingPanProjectile.DisplayName: Frying Pan Projectile
+}

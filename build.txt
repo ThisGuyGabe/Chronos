@@ -1,12 +1,11 @@
-displayName = Chronos Mod
-author = Chronos Mod Team
-version = 1.0
+displayName = Chronos
+author = The Chronos Mod Team
+version = 0.1
 
 hideResources = true
 hideCode = true
 includePDB = false
 includeSource = false
-dllReferences = StructureHelper
-buildIgnore = *.user, obj\*, bin\*, .vs\*, Sprite Gallery\*, .git\*, .gitignore, *.md, References\*
 
 homepage = https://discord.gg/B5g4G3ugXc
+buildIgnore = ., *.sln, bin/*, obj*, *.csproj, *.csproj.user, *.json

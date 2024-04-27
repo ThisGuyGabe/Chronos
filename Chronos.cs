@@ -1,8 +1,8 @@
 using Terraria.ModLoader;
 
-namespace Chronos;
-
-public class Chronos : Mod 
+namespace Chronos
 {
-
+    public class Chronos : Mod
+    {
+    }
 }

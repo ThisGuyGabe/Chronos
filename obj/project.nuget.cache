@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "El3qr9OiKK0drkokA2x4VE8x41YUS1OUZDg2OUFSoBDhpJ5wjjo7ttJ9IwnxY5xaMmB8v3aW16aa1FL8GH3JwA==",
+  "dgSpecHash": "azQpXKGXZNifZDzCnK2b40i3zHjNbDV9FOShQUY3gS/IrsiCYP0vj52BBEe6r/aVQBuzLNK9udwspl/JR9nMfg==",
   "success": true,
   "projectFilePath": "C:\\Users\\gabri\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Chronos\\Chronos.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\gabri\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+    "C:\\Users\\gabri\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512"
   ],
   "logs": []
 }
