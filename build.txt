@@ -1,6 +1,6 @@
 displayName = Chronos
 author = The Chronos Mod Team
-version = 0.1
+version = 0.100
 
 hideResources = true
 hideCode = true
